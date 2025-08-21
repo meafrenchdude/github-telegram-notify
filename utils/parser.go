@@ -111,7 +111,7 @@ func createPushText(event *types.PushEvent) string {
 			commit.Id[:7],
 			html.EscapeString(commit.Message),
 			commit.Author.HTMLURL,
-			commit.Author.Name,
+			commit.Author.username,
 		)
 	}
 
